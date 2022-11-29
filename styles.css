@@ -26,6 +26,11 @@
   * Text.................... Text helpers.
   */
 
+
+
+
+
+
 /*----------------------------------- *\
        #GLOBAL
 \*----------------------------------- */
@@ -45,7 +50,7 @@ a {
     text-decoration: none;
   }
   
- ul {
+ul {
     list-style-type: none;
   }
 
@@ -53,66 +58,28 @@ section {
     padding: 80px 20px;
 }
 
-/*----------------------------------- *\
-       #HEADER
-\*----------------------------------- */
+/**
+  * Media Objects Global Styles 
+  * Used in 
+  * 1. Hero-Section
+  * 2. CTA-Section
+  *
+  */
 
-.header {
-  background: #1F2937;
-  }
-
-.header-logo {
-    max-width: 195px;
-    height: auto;
-}
-
-.btn-primary {
-  border: none;
-  border-radius: 8px;
-  background: #3882F6;
-  color: white;
-  padding: 8px 24px;
-}
-
-.primary-links {
-  display: flex;
-  margin-bottom: 0;
-  padding: 10px;
-}
-
-.primary-links li a{
-    color: #ffffff;
-}
-
-.push-right {
+.o-media {
     display: flex;
-    gap: 16px;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: 10px;
-}
-
-/*----------------------------------- *\
-       #HERO-SECTION
-\*----------------------------------- */
-
-.hero-section {
-    background: #1F2937;
-    color: #ffffff;
-}
-
-.media {
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-.media-heading {
+.o-media__header {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
 }
 
-.media-content {
+.o-media__content {
     font-size: 18px;
     color: #E5E7EB;
     flex: 1;
@@ -121,75 +88,24 @@ section {
     
 }
 
-.media-figure {
+.o-media__figure {
     max-width: 480px;
     height: auto;
 }
 
+/**
+  * Button styles used throughout the site
+  */
 
-/*----------------------------------- *\
-       #INFO-SECTION
-\*----------------------------------- */
-
-.info-section {
-    text-align: center;
-}
-
-
-.info-container {
-    display: flex;
-    justify-content: center;
-    gap: 52px;
-    margin-top: 32px;
-}
-
-
-.info-items .info-image {
-    width: 250px;
-    height: auto;
-}
-
-/*----------------------------------- *\
-       #TESTIMONIAL-SECTION
-\*----------------------------------- */
-
-.testimonial-section {
-    background: #E5E7EB;
-}
-
-div.testimonial-wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 0 60px;
-}
-
-.testimonial-wrapper h3 {
-    font-size: 36px;
-    font-weight: 300;
-    color: #152937;
-}
-
-.testimonial-wrapper span {
-    margin-left: auto;
-    padding-right: 60px;
-}
-
-/*----------------------------------- *\
-       #CTA-SECTION
-\*----------------------------------- */
-
-.cta-container {
-    background: #3882F6;
-    color: #ffffff;
-    padding: 40px 20px;
+button.o-btn--primary {
+    border: none;
     border-radius: 8px;
-}
+    background: #3882F6;
+    color: white;
+    padding: 8px 24px;
+  }
 
-.cta-container h5 {
-    font-weight: 700;
-}
-
-.cta-button {
+button.o-btn--cta {
     border: 1px solid #ffffff;
     background: transparent;
     color: #ffffff;
@@ -198,16 +114,164 @@ div.testimonial-wrapper {
     margin-top: 15px;
 }
 
-.cta-container .media-content{
+
+/**
+  * Alignment styles used throughout the site
+  */
+
+.o-push--right {
+    display: flex;
+    gap: 16px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+
+
+
+
+/*----------------------------------- *\
+       #HEADER
+\*----------------------------------- */
+
+.c-header {
+  background: #1F2937;
+  }
+
+.c-header__logo {
+    max-width: 195px;
+    height: auto;
+}
+
+.c-nav__links{
+  display: flex;
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+.c-nav__links li a{
+    color: #ffffff;
+}
+
+
+
+
+
+
+/*----------------------------------- *\
+       #HERO-SECTION
+\*----------------------------------- */
+
+.c-hero-section {
+    background: #1F2937;
+    color: #ffffff;
+}
+
+
+
+
+
+/*----------------------------------- *\
+       #INFO-SECTION
+\*----------------------------------- */
+
+/**
+  * o- prefic for global styles :
+  * Info Section's layout can be applied
+  * for other layouts throughout the site.
+  */
+
+.o-info-section {
+    text-align: center;
+}
+
+
+.o-info__container {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    margin-top: 32px;
+}
+
+.o-info__image {
+    width: 250px;
+    height: auto;
+}
+
+
+
+
+
+/*----------------------------------- *\
+       #TESTIMONIAL-SECTION
+\*----------------------------------- */
+
+.c-testimonial-section {
+    background: #E5E7EB;
+}
+
+/* div. prefix to override default Bootstrap container styles */
+
+div.c-testimonial__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+}
+
+.c-testimonial__wrapper h3 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #152937;
+}
+
+.c-testimonial__wrapper span {
+    margin-left: auto;
+    padding-right: 60px;
+}
+
+
+
+
+
+/*----------------------------------- *\
+       #CTA-SECTION
+\*----------------------------------- */
+
+.c-cta__container {
+    background: #3882F6;
+    color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.c-cta__container h5 {
+    font-weight: 700;
+}
+
+/**
+  * Specificity for the selector below
+  * to override global styling for media
+  * objects.
+  * 1. Refer to global styles section(#GLOBAL)
+  * for reference.
+  */
+
+.c-cta__container .o-media__content{
     flex: initial;
     padding: 10px 85px;
 }
+
+
+
+
+
 
 /*----------------------------------- *\
        #FOOTER
 \*----------------------------------- */
 
-.footer {
+.c-footer {
     background: #1F2937;
     color: #ffffff;
     display: flex;
@@ -216,9 +280,13 @@ div.testimonial-wrapper {
     padding: 20px;
 }
 
-.footer p {
+.c-footer__copyright {
     margin: 0;
 }
+
+
+
+
 
 /*----------------------------------- *\
        #RESPONSIVE
@@ -230,7 +298,7 @@ div.testimonial-wrapper {
 */
 
 @media screen and (max-width: 1280px) {
-    .info-container {
+    .o-info__container {
         flex-wrap: wrap;
     }
 }
@@ -241,10 +309,8 @@ div.testimonial-wrapper {
 */
 
 @media screen and (max-width: 1024px) {
-    .hero-section .media-figure {
+    .c-hero-section .o-media__figure {
         margin-top: 30px;
         max-width: 500px;
     }
 }
-
-
