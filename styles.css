@@ -1,0 +1,221 @@
+/**
+  * CONTENTS
+  *
+  * SETTINGS
+  * Global..................Globally-available variables and config.
+  *
+  * TOOLS
+  * Mixins..................Useful mixins
+  *
+  * GENERIC
+  * Normalize.css...........A level playing field.
+  * Box-sixing..............Better default `box-sizing`.
+  *
+  * BASE
+  * Headings................h1-h6 styles.
+  *
+  * OBJECTS
+  * Wrappers................Wrapping and constraining elements
+  *
+  * COMPONENTS
+  * Page-head............... The main page header.
+  * Page-foot............... The main page footer
+  * BUttons................. Button elements.
+  *
+  * TRUMPS
+  * Text.................... Text helpers.
+  */
+
+/*----------------------------------- *\
+       #GLOBAL
+\*----------------------------------- */
+
+/* this is some magical font-importing. */
+
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    background: #eee;
+    font-family: Besley, serif;
+  }
+
+a {
+    text-decoration: none;
+  }
+  
+ ul {
+    list-style-type: none;
+  }
+
+section {
+    padding: 80px 20px;
+}
+
+/*----------------------------------- *\
+       #HEADER
+\*----------------------------------- */
+
+.header {
+  background: #1F2937;
+  }
+
+.header-logo {
+    max-width: 195px;
+    height: auto;
+}
+
+.btn-primary {
+  border: none;
+  border-radius: 8px;
+  background: #3882F6;
+  color: white;
+  padding: 8px 24px;
+}
+
+.primary-links {
+  display: flex;
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+.primary-links li a{
+    color: #ffffff;
+}
+
+.push-right {
+    display: flex;
+    gap: 16px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+/*----------------------------------- *\
+       #HERO-SECTION
+\*----------------------------------- */
+
+.hero-section {
+    background: #1F2937;
+    color: #ffffff;
+}
+
+.media {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.media-heading {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.media-content {
+    font-size: 18px;
+    color: #E5E7EB;
+    flex: 1;
+    padding: 10px 20px;
+    min-width: 250px;
+    
+}
+
+.media-figure {
+    max-width: 480px;
+    height: auto;
+}
+
+
+/*----------------------------------- *\
+       #INFO-SECTION
+\*----------------------------------- */
+
+.info-section {
+    text-align: center;
+}
+
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    margin-top: 32px;
+}
+
+
+.info-items .info-image {
+    width: 250px;
+    height: auto;
+}
+
+/*----------------------------------- *\
+       #TESTIMONIAL-SECTION
+\*----------------------------------- */
+
+.testimonial-section {
+    background: #E5E7EB;
+}
+
+div.testimonial-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+}
+
+.testimonial-wrapper h3 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #152937;
+}
+
+.testimonial-wrapper span {
+    margin-left: auto;
+    padding-right: 60px;
+}
+
+/*----------------------------------- *\
+       #CTA-SECTION
+\*----------------------------------- */
+
+.cta-container {
+    background: #3882F6;
+    color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.cta-container h5 {
+    font-weight: 700;
+}
+
+.cta-button {
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 24px;
+    margin-top: 15px;
+}
+
+.cta-container .media-content{
+    flex: initial;
+    padding: 10px 85px;
+}
+
+/*----------------------------------- *\
+       #FOOTER
+\*----------------------------------- */
+
+.footer {
+    background: #1F2937;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
