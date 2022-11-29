@@ -219,3 +219,18 @@ div.testimonial-wrapper {
 .footer p {
     margin: 0;
 }
+
+/*----------------------------------- *\
+       #RESPONSIVE
+\*----------------------------------- */
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape and Portrait)
+  ##Screen = Below 767PX;
+*/
+
+@media screen and (max-width: 1200px) {
+    .info-container {
+        flex-wrap: wrap;
+    }
+}
